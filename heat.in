@@ -1,0 +1,12 @@
+#heat.in
+#Initial MD equilibration
+#500,000 steps * 0.002 ps/step = 1,000 ps = 1 ns
+#1,000 steps * 0.002 ps/step = 2 ps
+&cntrl
+  ntx=1, irest=0,
+  nstlim=500000, dt=0.002, ntc=2, ig=-1,
+  ntpr=1000, ntwx=1000, ntwr=1000,
+  cut=8, ntb=1, igb=0,
+  ntt=1, ntp=0,
+  tempi=10, temp0=298.0, tautp=2,
+ /
