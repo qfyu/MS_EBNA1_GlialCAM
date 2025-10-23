@@ -1,0 +1,7 @@
+#mini.in
+#initial minimisation of our complex
+#5,000-step steepest descent + 15,000-step conjugate gradient minimization
+ &cntrl
+  imin=1, maxcyc=20000, ncyc=5000,
+  cut=10, ntb=2, ntp=1, igb=0,
+ /
